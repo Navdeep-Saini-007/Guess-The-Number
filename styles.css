@@ -1,0 +1,74 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+::placeholder {
+  color: rgb(52, 75, 138);
+}
+
+.page-container {
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: rgb(154, 154, 226);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(52, 75, 138);
+}
+
+.page-container > * {
+  margin-bottom: 2rem;
+}
+
+.heading {
+  margin-top: 3rem;
+}
+
+#input {
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.5rem;
+  outline: none;
+  width: 20rem;
+  margin-right: 1rem;
+  background-color: rgb(154, 154, 226);
+  border: 2px solid rgb(52, 75, 138);
+  color: rgb(52, 75, 138);
+}
+
+.button {
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  color: rgb(52, 75, 138);
+  border: 2px solid rgb(52, 75, 138);
+  background-color: rgb(154, 154, 226);
+}
+
+.button:hover {
+  background-color: rgb(52, 75, 138);
+  color: rgb(154, 154, 226);
+}
+
+#game-over {
+  display: none;
+}
+
+#previous-guesses {
+  display: flex;
+}
+
+.para {
+  margin-right: 1rem;
+}
+
+.wrong {
+  color: rgb(255, 0, 0);
+}
+
+.right {
+  color: rgb(0, 255, 0);
+}
